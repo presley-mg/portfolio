@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presley MANGALA — Développeur Web</title>
+  <meta name="description" content="Presley MANGALA, développeur web à Pointe-Noire. HTML, CSS, JavaScript, PHP, Laravel. Découvrez mes projets : Brech Academy, Association Caridad.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Presley MANGALA — Développeur Web">
+  <meta property="og:description" content="Développeur web à Pointe-Noire — HTML, CSS, JavaScript, PHP, Laravel.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="#top" class="navbar__logo">Presley<span class="dot">.</span>dev</a>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="navbar__menu" id="navMenu">
+        <a href="#projets" class="navbar__link">Projets</a>
+        <a href="#stack" class="navbar__link">Stack</a>
+        <a href="#a-propos" class="navbar__link">À propos</a>
+        <a href="#contact" class="navbar__link navbar__link--cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== HERO — IDENTITÉ ===== -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text reveal">
+          <p class="eyebrow">Pointe-Noire, République du Congo</p>
+          <h1 class="hero__title">Je transforme un besoin réel en produit numérique fonctionnel.</h1>
+          <p class="hero__desc">
+            Développeur web — HTML/CSS/JavaScript, PHP, en transition vers Laravel.
+            Je construis des applications qui résolvent un vrai problème,
+            pas seulement des maquettes qui l'illustrent.
+          </p>
+          <div class="hero__actions">
+            <a href="#projets" class="btn btn--primary">Voir mes projets</a>
+            <a href="#contact" class="btn btn--ghost">Me contacter</a>
+          </div>
+        </div>
+        <div class="hero__photo reveal">
+          <img src="assets/img/presley.jpg" alt="Presley MANGALA">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CE QUE JE CONSTRUIS ===== -->
+    <section class="section philosophy">
+      <div class="container">
+        <p class="section__eyebrow">Comment je travaille</p>
+        <div class="philosophy__grid">
+          <div class="philosophy__item reveal">
+            <span class="philosophy__num">01</span>
+            <h3>Comprendre avant de coder</h3>
+            <p>Un formulaire d'inscription n'est pas qu'une interface : c'est une logique de données (étudiants, filières, statuts) qu'il faut modéliser avant d'écrire une ligne de code.</p>
+          </div>
+          <div class="philosophy__item reveal">
+            <span class="philosophy__num">02</span>
+            <h3>Du natif au framework</h3>
+            <p>J'ai appris PHP en PDO pur avant Laravel , ça m'aide à comprendre ce qu'un framework automatise réellement, pas seulement comment l'utiliser.</p>
+          </div>
+          <div class="philosophy__item reveal">
+            <span class="philosophy__num">03</span>
+            <h3>Construire pour durer</h3>
+            <p>Un site pensé pour être maintenu par moi ou par quelqu'un d'autre  au-delà de sa mise en ligne initiale.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJETS — injectés dynamiquement depuis data.js ===== -->
+    <section id="projets" class="section section--muted">
+      <div class="container">
+        <p class="section__eyebrow">Travaux sélectionnés</p>
+        <h2 class="section__title">Projets</h2>
+        <div id="projectsList" class="projects__list"></div>
+      </div>
+    </section>
+
+    <!-- ===== STACK ===== -->
+    <section id="stack" class="section">
+      <div class="container">
+        <p class="section__eyebrow">Boîte à outils</p>
+        <h2 class="section__title">Stack technique</h2>
+        <div id="skillsList" class="skills__grid"></div>
+      </div>
+    </section>
+
+    <!-- ===== À PROPOS ===== -->
+    <section id="a-propos" class="section section--muted">
+      <div class="container about__grid">
+        <div class="about__text reveal">
+          <p class="section__eyebrow">Qui je suis</p>
+          <h2 class="section__title">À propos</h2>
+          <p>
+            Formé au développement web via le programme D-CLIC de l'Organisation
+            Internationale de la Francophonie, je construis actuellement des
+            applications de gestion réelles inscriptions, suivi de données,
+            tableaux de bord en migrant progressivement d'un PHP natif maîtrisé
+            vers Laravel.
+          </p>
+          <p>
+            Je ne me contente pas de construire une interface ; je comprends
+            aussi comment les utilisateurs interagissent avec les contenus et
+            les plateformes numériques , une sensibilité qui vient de mon
+            expérience en community management.
+          </p>
+        </div>
+        <ul class="about__facts reveal">
+          <li><span class="mono">Basé à</span> Pointe-Noire, Congo</li>
+          <li><span class="mono">Formation</span> D-CLIC — OIF</li>
+          <li><span class="mono">Langues</span> Français, Anglais</li>
+          <li><span class="mono">Dispo</span> Ouvert aux opportunités</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section contact">
+      <div class="container contact__inner">
+        <p class="section__eyebrow">Prochaine étape</p>
+        <h2 class="section__title">Discutons de votre projet</h2>
+        <p class="contact__text">
+          Ouvert aux opportunités professionnelles et aux collaborations.
+        </p>
+        <div class="contact__actions">
+          <a href="mailto:mangalapresley42@gmail.com" class="btn btn--primary">mangalapresley42@gmail.com</a>
+        </div>
+        <div class="contact__socials">
+          <a href="https://github.com/presley-mg" target="_blank" rel="noopener noreferrer" class="link">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/presley-mangala-668754399/" target="_blank" rel="noopener noreferrer" class="link">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Presley MANGALA</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
